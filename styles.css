@@ -543,6 +543,11 @@ table, thead, th, tr, td {
 }
 
 
+
+
+
+
+
 /* START ENTRY MARKS BOX */
 
 #bodyRoot {
@@ -550,10 +555,13 @@ table, thead, th, tr, td {
     width: 50%;
     border-radius: .4pc;
     box-shadow: 0 0.66pc .666pc #eee;
+    background-color: #fff;
+    padding: .5pc;
+
 }
 .main_root {
     margin-top: 1pc;
-    background-color: #fff;
+    background-color: var(--color-gray-05);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
