@@ -1,0 +1,504 @@
+/*Styles for display sizes 996px and over */
+
+/*General styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 12px;
+}
+
+/* Adjust colors for specific theme preferences */
+
+
+:root {
+    --main-bkcolor: rgb(10, 9, 14);
+    --main-textColor: #fff;
+    --sec-bkcolor: #888;
+    --sec-textColor: #999;
+    --main-underlineColor: rgb(238, 34, 68);
+    --main-border-color: #999;  
+}
+
+html {
+    background: var(--main-bkcolor);
+    color: var(--main-textColor);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Start section styles */
+
+/* header styles */
+
+.navbar {
+    display: flex;
+    flex-flow: column;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: .5pc .5pc;
+
+}
+
+.x-logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--main-underlineColor);
+    transform: skew(23deg);
+    border: .1pc groove var(--main-underlineColor);
+    padding: .1pc;
+}
+
+.app-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.sec-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4pc;
+}
+
+.tab-panel {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.tab-nav {
+    font-size: 2.5rem;
+    position: relative;
+    color: var(--sec-textColor);
+}
+
+.tab-nav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .2pc;
+    bottom: 0;
+    left: 1pc;
+    margin: -1pc;
+    background-color: var(--main-underlineColor);
+    transform: scale(0);
+    transition: transform .3s ease;
+}
+
+.tab-nav:hover::before {
+    transform: scale(1);
+}
+
+.tab-nav:hover {
+    color: var(--main-textColor);
+}
+
+.tabLink:visited {
+    color: var(--main-textColor);
+
+}
+.tabLink:active {
+    color: var(--main-textColor);
+}
+.nav-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+
+
+#search {
+    padding: .2pc;
+    background-color: var(--sec-bkcolor);
+    border: .1pc solid var(--sec-bkcolor);
+    outline: none;
+}
+
+#submit {
+    padding: .2pc;
+    border-color: var(--main-border-color);
+}
+
+.na-nav {
+    color: var(--sec-textColor);
+}
+
+.na-nav:hover {
+    color: var(--main-textColor);
+}
+
+/* End Header styles */
+
+.grid-container {
+    margin-top: 1.5pc;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: minmax(100vh, auto);
+
+}
+
+.side-bar {
+    border: .1pc solid var(--main-border-color);
+    display: flex;
+    flex-flow: column;
+    padding: .5pc .5pc;
+    color: var(--sec-textColor);
+    
+}
+
+.home-side-bar {
+    justify-content: space-between;
+    padding: .5pc .5pc;
+    color: var(--sec-textColor);
+}
+
+.top-sb-box {
+    display: flex;
+    flex-direction: column;
+    gap: .5pc;
+
+}
+
+.sb-nav {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    align-items: center;
+    border: .1pc solid #555;
+    padding: .2pc;
+    transition: border-color .3s ease;
+}
+
+.sb-nav:hover {
+    color: var(--main-textColor);
+    border-color: var(--main-underlineColor);
+}
+
+.bottom-sb-box {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    text-align: center;
+    height: 15vh;
+}
+
+
+
+.bt-sb-link {
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    border: .1pc solid;
+    padding: .2pc;
+}
+
+.bt-sb-link:hover {
+    color: var(--main-textColor);
+    border-color: var(--main-underlineColor);
+}
+.central{
+    border: .1pc solid var(--main-border-color);
+    height: auto;
+    font-size: 4rem;
+
+}
+
+.central-contents {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    height: 100%;
+    padding: 1pc;
+}
+
+.s-box {
+    height: 20%;
+}
+
+.s-title {
+    font-size: 2rem;
+}
+
+
+
+.s-text {
+    font-size: 1.1rem;
+}
+
+
+/* ADDED MARKUP FROM SCHOOL SYSTEM */
+#app {
+    margin: 5pc auto;
+    border-radius: .4pc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 20pc;
+    gap: 1pc;
+    width: 70%;
+    background-color: #000;
+}
+
+.oraside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oractbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+
+.orbtn {
+    height: 3pc;
+    width: 15pc;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+/* students registration box */
+
+.stdmainbx {
+    margin: 2pc auto;
+    width: 70%;
+    
+}
+
+.stdmaintitle {
+    padding: .5pc 0pc;
+    font-size: 2rem;
+}
+
+.stdmainin {
+    background-color: #000;
+    border-radius: .4pc;
+}
+
+.stdmainintitle {
+    padding: .5pc;
+    font-size: 1.5rem;
+}
+
+.stdgdatabx {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 20pc;
+    padding: .5pc;
+}
+
+.stdaside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5pc;
+}
+
+.sflex {
+    height: 3pc;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1pc;
+}
+
+.sflexinp {
+    height: 2.5pc;
+    outline: none;
+    width: 60%;
+}
+
+.studentProfile {
+    display: flex;
+    gap: 1pc;
+}
+
+#changeProfile {
+    height: 2.5pc;
+    width: 8pc;
+    border: none;
+}
+
+.stdImg {
+    height: 10pc;
+    width: 10pc;
+    border-radius: 100%;
+}
+
+
+.stdActbtns {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.stdActbtnsIn {
+    padding: .5pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+.stdinfobtn {
+    height: 2.5pc;
+    width: 8pc;
+    border: none;
+}
+
+.notif {
+    padding: .5pc;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+}
+
+
+/* grade box */
+.stdgradebx {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 15pc;
+    padding: .5pc;
+}
+
+
+/* Table*/
+
+#dataTable {
+    margin: 5pc auto;
+    width: 70%;
+    border-radius: .4pc;
+    background-color: #000;
+}
+
+#stdData {
+    width: 100%;
+}
+
+table, thead, th, tr, td {
+    border: .1pc solid #333;
+}
+
+/* hide boxes and show them using js when needed 
+
+.hidebox {
+    display: none;
+}
+
+*/
+
+.hbox {
+    display: none;
+}
+
+/* additional style - for registry tab - shows when nothing has been selected */
+
+.rgshow {
+    margin: 5pc auto;
+    width: 50%;
+    font-size: 2rem;
+}
+
+/* confirm box */
+/*mobile first */
+/* 24 January 2023 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.confirmAppOuter {
+    margin: 5pc auto;
+    width: 40%;
+    padding: 1.25pc 1pc;
+    border-radius: 1.25pc 1.25pc 0pc 0pc;
+    /* instead of a border - use box-shadow */
+    background-color: black;
+    color: var(--main-textColor);
+    box-shadow: 0 .6pc 1.2pc rgba(29, 30, 32, 0.753); 
+}
+
+.confirmApp {
+    display: flex;
+    flex-flow: column;
+    gap: .25pc;
+}
+
+.confirmAppInner {
+    border: .1pc solid #555;
+    padding: .5pc;
+    border-radius: .25pc;
+}
+
+.confirmHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .2pc;
+}
+
+.confirmTitle {
+    font-size: 1.1rem;
+}
+
+
+#closeConfirm {
+    font-size: 1.1rem;
+    color: #eee;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: .3pc .8pc; /* buttons have a preset top and bottom paddings - it should be smaller */ 
+}
+
+#closeConfirm:hover {
+    background-color: #f00;
+    color: white;
+}
+
+.confirmMain {
+    padding: .5pc;
+    height: 10vh;
+}
+
+.confirmButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: .2pc;
+}
+
+.confirmbtn {
+    height: 2.5pc;
+    background: transparent;
+    font-size: 1rem;
+    color: #fff;
+    border-color: #555;
+}
+
+.confirmbtn:hover {
+    border-color: goldenrod;
+}
+
+.confirmYes {
+    border-radius: .25pc 0pc 0pc .25pc;
+}
+
+.confirmNo {
+    border-radius: 0pc .25pc .25pc 0pc;
+}
