@@ -191,7 +191,7 @@ trow.appendChild(td9);
     td8.innerHTML = stdgender.value;
     td9.innerHTML = stdage.value;
     regNotif.innerHTML = "Student Successfully Saved!";
-    regNotif.style.color = "white";
+    regNotif.style.color = "black";
 
     //virtual rows created successfully;
     //A new problem arises; - the data stored is deleted when the page is refreshed;
