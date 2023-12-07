@@ -42,6 +42,8 @@ var open = document.getElementById("defaultOpen").click();
 let main = document.getElementById("app");
 
 let regbox = document.getElementById("studentRegbox");
+
+let entermarks = document.getElementById('bodyRoot');
 let gradebox = document.getElementById("studentGradebox");
 let dataT = document.getElementById("dataTable");
 let openRegistry = () => {
@@ -68,19 +70,25 @@ let closeRegistry = () => {
         rconfirm.style.zIndex = "10";
 }
 
+let rgtxt = document.querySelector(".rgshow");
 
 let openMarksbox = () => {
     regbox.style.display = "none";
     gradebox.style.display = "block";
     document.querySelector(".regtitle").innerHTML = "Grade";
-let rgtxt = document.querySelector(".rgshow");
     rgtxt.style.display = "none";
     document.querySelector(".performance").innerHTML = "Grade Student";
 }
 
+let enterMarksbox = () => {
+    regbox.style.display = 'none';
+    gradebox.style.display = "none";
+    document.querySelector(".regtitle").innerHTML = "Marks";
+    rgtxt.style.display = "none";
+    document.querySelector(".performance").innerHTML = "Enter Marks";
+}
+
 let closeGradebox = () => {
-
-
     gradebox.style.display = "block"; //do not close
 }
 

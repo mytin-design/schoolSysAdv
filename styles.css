@@ -541,3 +541,61 @@ table, thead, th, tr, td {
 .confirmNo {
     border-radius: 0pc .25pc .25pc 0pc;
 }
+
+
+/* START ENTRY MARKS BOX */
+
+#bodyRoot {
+    margin: 5pc auto;
+    width: 50%;
+    border-radius: .4pc;
+    box-shadow: 0 0.66pc .666pc #eee;
+}
+.main_root {
+    margin-top: 1pc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+    gap: 1pc;
+    padding: 1pc;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1pc;
+
+}
+
+.subject_box {
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15pc;
+}
+
+.subject_input {
+    padding: .5pc;
+    width: 7pc;
+    height: 2.5pc;
+}
+
+.subject_total_btn {
+    height: 2pc;
+    width: 7pc;
+    padding: .5pc;
+}
+
+
+@media only screen and (max-width:960px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1pc;
+        align-items: center;
+    }
+}

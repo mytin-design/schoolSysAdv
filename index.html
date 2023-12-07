@@ -257,6 +257,74 @@
 
     <!--End Register close confirm-->
 
+    <!--Enter marks-->
+    <div id="bodyRoot" class="body_root">
+        <div class="header-mark">
+            <h1 class="header_marker">CPS MARKS</h1>
+        </div>
+        <div class="main_root">
+            <!--Rows with at least two subjects inline-->
+            <div class="row row_one">
+                <div class="subject_box subject_math">
+                    <label for="math">Mathematics</label>
+                    <input type="number" id="math" class="subject_input" placeholder="Mathematics" name="Mathematics" required>
+                </div>
+                <div class="subject_box subject_eng">
+                    <label for="eng">English</label>
+                    <input type="number" id="eng" class="subject_input" placeholder="English" name="English" required>
+                </div>
+            </div>
+
+            <!--Basically, the rows and subject boxes have a similar structure, so copy,paste and change text-->
+
+            <div class="row row_two">
+                <div class="subject_box subject_kisw">
+                    <label for="kisw">Kiswahili</label>
+                    <input type="number" id="kisw" class="subject_input" placeholder="Kiswahili" name="Kiswahili" required>
+                </div>
+                <div class="subject_box subject_scie">
+                    <label for="scie">Science</label>
+                    <input type="number" id="scie" class="subject_input" placeholder="Science" name="Science" required>
+                </div>
+            </div>
+
+            <!--Row 3-->
+            
+            <div class="row row_three">
+                <div class="subject_box subject_comp">
+                    <label for="comp">Composition</label>
+                    <input type="number" id="comp" class="subject_input" placeholder="Composition" name="Composition" required>
+                </div>
+                <div class="subject_box subject_insha">
+                    <label for="insha">Insha</label>
+                    <input type="number" id="insha" class="subject_input" placeholder="Insha" name="Insha" required>
+                </div>
+            </div>
+        </div>
+        <hr color="#eee">
+
+        <!--CONTAINER HOLDS total and stuff like that-->
+
+        <div class="lower_bottom">
+            <div class="row row_three">
+                <div class="subject_box subject_comp">
+                    <button type="button" id="subject_output_btn1" class="subject_total_btn">Total</button>
+                    <p id="total_marks" class="subject_input" ></p>
+                </div>
+                <div class="subject_box subject_insha">
+                    <button type="button" id="subject_output_btn2" class="subject_total_btn">Num. of Subj.</button>
+                    <p id="total_subjs" class="subject_input" ></p>
+                </div>
+        </div>
+        <div class="lower_output">
+            
+        </div>
+        </div>
+
+    </div>
+
+    <!--END enter marks-->
+
 
                 </div>
             </div>
