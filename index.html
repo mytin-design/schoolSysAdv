@@ -186,7 +186,7 @@
         </div>
     </div>
 
-    <div class="rgshow">Please Select <a href="#">Register Student</a> or <a href="#home">Grade Student</a> to proceed.</div>
+    <div class="rgshow">Please Select <a href="#" onclick="trygoingHome()">Register Student</a> or <a href="#" onclick="trygoingHome()">Grade Student</a> to proceed.</div>
 
     <!--Grade box-->
     <div id="studentGradebox" class="stdmainbx hbox">
@@ -245,7 +245,7 @@
                     <button title="Close" id="closeConfirm" onclick="closeconfirmRecords()">&times;</button>
                 </div>
                 <div class="confirmMain">
-                    <p class="confirmRequest">Are you sure you want to stop Registering Student?</p>
+                    <p class="confirmRequest">Are you sure you want to Exit?</p>
                 </div>
             </div>
             <div class="confirmButtons">
@@ -320,6 +320,18 @@
             
         </div>
         </div>
+
+        <hr color="lightgray">
+            <div class="stdActbtns">
+
+                <div class="stdActbtnsIn">
+
+                    <button id="delStudent" class="stdinfobtn">Delete Record</button>
+                    <button id="saveStudent" class="stdinfobtn">Save</button>
+                    <button id="closeGradebox" class="stdinfobtn" onclick="closeMarksbox()">Close</button>
+
+                </div>                
+            </div>
 
     </div>
 

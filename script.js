@@ -71,6 +71,15 @@ let closeRegistry = () => {
         rconfirm.style.zIndex = "10";
 }
 
+function closeGradebox() {
+    closeRegistry();
+
+}
+
+function closeMarksbox() {
+    closeRegistry();
+}
+
 
 let openMarksbox = () => {
     regbox.style.display = "none";
@@ -93,11 +102,11 @@ let enterMarksbox = () => {
 
 }
 
-let closeGradebox = () => {
+/*let closeGradebox = () => {
 
 
     gradebox.style.display = "block"; //do not close
-}
+}*/
 
 
 //purpose to hide the records box, if no record has been added;
@@ -107,7 +116,13 @@ let openStudentRecords = () => {
 }
 
 let closeDatabox = () => {
-    dataT.style.display = "block"; //do not close
+    //dataT.style.display = "block"; //do not close
+    document.getElementById("defaultOpen").click();
+
+}
+
+function trygoingHome() {
+    document.getElementById("defaultOpen").click();
 }
 
 
@@ -274,10 +289,9 @@ let confirmRYes = () => {
     gradebox.style.display = "none";
     rconfirm.style.display = "none";
     rgtxt.style.display = "block";
+    document.querySelector(".performance").innerHTML = "Registry";
 
     document.getElementById("defaultOpen").click();
-
-
 }
 
 
