@@ -54,6 +54,10 @@ html {
     background: var(--color-white);
     color: var(--main-bkcolor);
 }
+
+body {
+    height: 60vh;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -144,9 +148,10 @@ a {
 
 
 #searchcpsMarks {
+    height: 2.5pc;
     padding: .2pc;
     background-color: var(--color-gray-05);
-    border: .1pc solid var(--main-bkcolor);
+    border: .1pc solid var(--color-gray-50);
     outline: none;
     border-radius: 4px;
 }
@@ -171,14 +176,18 @@ a {
     color: var(--color-gray-100);
 }
 
+
+
 /* End Header styles */
+
+
 
 .grid-container {
     margin-top: 1.5pc;
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: minmax(100vh, auto);
-
+    grid-template-rows: minmax(70vh, auto);
+    height: 50vh;
 }
 
 .side-bar {
@@ -186,8 +195,7 @@ a {
     display: flex;
     flex-flow: column;
     padding: .5pc .5pc;
-    color: var(--main-bkcolor);
-    
+    color: var(--main-bkcolor);   
 }
 
 .home-side-bar {
@@ -203,14 +211,15 @@ a {
     flex-flow: column;
     gap: 1pc;
     align-items: center;
-    border: .1pc solid #555;
+    background-color: var(--color-gray-05);
     padding: .2pc;
     transition: border-color .3s ease;
+    border-radius: 8px;
 }
 
 .sb-nav:hover {
     color: var(--main-bkcolor);
-    border-color: var(--main-underlineColor);
+    background-color: #eee;
 }
 
 .bottom-sb-box {
@@ -241,6 +250,7 @@ a {
     height: auto;
     font-size: 4rem;
     background-color: var(--color-blue-05);
+
 
 }
 
@@ -439,6 +449,7 @@ table, thead, th, tr, td {
     display: none;
 }
 
+
 */
 
 .hbox {
@@ -451,7 +462,10 @@ table, thead, th, tr, td {
     margin: 5pc auto;
     width: 50%;
     font-size: 2rem;
+    color: #000;
 }
+
+
 
 /* confirm box */
 /*mobile first */
@@ -462,7 +476,6 @@ table, thead, th, tr, td {
     box-sizing: border-box;
 }
 .confirmAppOuter {
-    margin: 5pc auto;
     width: 40%;
     padding: 1.25pc 1pc;
     border-radius: 1.25pc 1.25pc 0pc 0pc;
@@ -470,6 +483,13 @@ table, thead, th, tr, td {
     background-color: black;
     color: var(--main-textColor);
     box-shadow: 0 .6pc 1.2pc rgba(29, 30, 32, 0.753); 
+}
+
+/* class added by javascript for dialog confirm box */
+.dialogStyles {
+    position: absolute;
+    top: 30%;
+    left: 35%;  
 }
 
 .confirmApp {
@@ -546,13 +566,11 @@ table, thead, th, tr, td {
 
 
 
-
-
 /* START ENTRY MARKS BOX */
 
 #bodyRoot {
     margin: 5pc auto;
-    width: 50%;
+    width: 70%;
     border-radius: .4pc;
     box-shadow: 0 0.66pc .666pc #eee;
     background-color: #fff;
@@ -606,4 +624,155 @@ table, thead, th, tr, td {
         gap: 1pc;
         align-items: center;
     }
+}
+
+
+
+/* media query for school system */
+@media only screen and (min-width: 1180px) {
+    #bodyRoot {
+        width: 60%;
+    }
+}
+@media only screen and (max-width:1160px) {
+    .tab-nav {
+        font-size: 1.8rem;
+    }
+
+    .nav-actions {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    .tab-nav {
+        font-size: 1.6rem;
+    }
+
+    #app {
+        width: 90%;   
+    }
+
+    .stdmainbx {
+        margin: 2pc auto;
+        width: 90%;
+        
+    }
+}
+@media only screen and (max-width: 700px) {
+   
+    .sec-nav {
+        display: flex;
+        flex-flow: column;
+        gap: 2pc;
+    }
+
+    .nav-actions {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    width: 100%;
+}
+
+.tab-panel {
+    width: 100%;
+}
+
+.tab-nav {
+    font-size: 1.5rem;
+}
+
+.grid-container {
+    margin-top: 1.5pc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+.side-bar {
+    display: none;
+    
+}
+
+
+.central{
+    font-size: 4rem;
+    width: 100%;
+    padding: .5pc;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+    padding: .5pc;
+}
+
+/* student reg box */
+.stdmainbx {
+    margin: 2pc auto;
+    width: 100%;
+    
+}
+
+.stdgdatabx {
+    display: flex;
+    flex-direction: column;
+    padding: .5pc;
+}
+
+.studentProfile {
+    display: unset;
+}
+
+.stdActbtnsIn {
+    padding: .5pc;
+    display: unset;
+}
+
+.stdinfobtn {
+    margin: .5pc;
+}
+
+.confirmAppOuter {
+    width: 80%;
+}
+
+/* --------------*/
+.rgshow {
+    width: 100%;
+    text-align: center;
+    padding: .5pc;
+}
+
+
+/* ------------------*/
+
+#dataTable {
+    width: 100%;
+    padding: .5pc;
+}
+
+
+/* -------------------*/
+#bodyRoot {
+    width: 100%;
+    padding: .5pc;
+}
+
+
+/* --------------------------*/
+.confirmAppOuter {
+    width: 100%;
+}
+
+.dialogStyles {
+    position: absolute;
+    top: 30%;
+    left: 0;  
+}
+
 }

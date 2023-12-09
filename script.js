@@ -51,24 +51,30 @@ let openRegistry = () => {
     entermarks.style.display = 'none';
     regbox.style.display = "block";
     document.querySelector(".regtitle").innerHTML = "Register";
-    document.querySelector(".rgshow").innerHTML = "";
+    //document.querySelector(".rgshow").innerHTML = "";
+    rgtxt.style.display = 'none';
     document.querySelector(".performance").innerHTML = "Register Student";
+    document.getElementById("performanceOpener").click();
+
 } 
 
 let closeRegistry = () => {
-    main.style.display = "grid";
-    regNotif.innerHTML = "";
+    //regNotif.innerHTML = "Hi";
 
         //open confirm box
         document.querySelector("html").style.opacity = "1";
         let regTab = document.querySelector(".p-central-box");
-        //regTab.style. = "90%";
+        //regTab.style.display = "block";
         let rconfirm = document.querySelector(".regConfirm");
+        rconfirm.classList.add("dialogStyles");
         rconfirm.style.display = "block";
+
+        /*
         rconfirm.style.position = "absolute";
-        rconfirm.style.top = "20%";
+        rconfirm.style.top = "30%";
         rconfirm.style.left = "35%";
         rconfirm.style.zIndex = "10";
+        */
 }
 
 function closeGradebox() {
@@ -86,9 +92,10 @@ let openMarksbox = () => {
     gradebox.style.display = "block";
     entermarks.style.display = 'none';
     document.querySelector(".regtitle").innerHTML = "Grade";
-    let rgtxt = document.querySelector(".rgshow");
     rgtxt.style.display = "none";
     document.querySelector(".performance").innerHTML = "Grade Student";
+    document.getElementById("performanceOpener").click();
+
 }
 
 let enterMarksbox = () => {
@@ -96,9 +103,9 @@ let enterMarksbox = () => {
     gradebox.style.display = "none";
     entermarks.style.display = 'block';
     document.querySelector(".regtitle").innerHTML = "Marks";
-    let rgtxt = document.querySelector(".rgshow");
     rgtxt.style.display = "none";
     document.querySelector(".performance").innerHTML = "Enter Marks";
+    document.getElementById("performanceOpener").click();
 
 }
 
@@ -112,7 +119,9 @@ let enterMarksbox = () => {
 //purpose to hide the records box, if no record has been added;
 
 let openStudentRecords = () => {
-    dataT.style.display = "block";
+    document.getElementById("graphicsOpener").click();
+
+    //dataT.style.display = "block";
 }
 
 let closeDatabox = () => {
